@@ -1,0 +1,12 @@
+{
+  "/mCircleGreen": {
+    "min": 0,
+    "max": 255,
+    "value": 255
+  },
+  "/circle_red": {
+    "min": 0,
+    "max": 255,
+    "value": 255
+  }
+}
