@@ -1,5 +1,6 @@
 float x = 0;
 float y = 0;
+float r = 0;
 
 void setup() {
   size(1024, 768);
@@ -11,10 +12,11 @@ void setup() {
 void draw() {
   float mSize = 10;
   float mStep = 10;
-  float mNoiseStep = 0.004;
-  float mShade = noise(x * mNoiseStep, y * mNoiseStep) * 255;
-  // (0–1024) to (0.0–4.096)
+  float mNoiseStep = 0.05;
+  float mShade = noise(r) * 255;
   
+  r = r + mNoiseStep;
+
   fill(mShade);
   rect(x, y, mSize, mSize);
   x = x + mStep;
@@ -24,3 +26,5 @@ void draw() {
     y = y + mStep;
   }
 }
+
+/* see [Perlin Noise](https://en.wikipedia.org/wiki/Perlin_noise) */
