@@ -2,11 +2,15 @@
 
 ---
 
+<!-- _class: lead -->
+
 > Tweaking refers to fine-tuning or adjusting a complex system, usually an electronic device. Tweaks are any small modifications intended to improve a system.
 
 from [Wikipedia: Tweaking](https://en.wikipedia.org/wiki/Tweaking)
 
 ---
+
+<!-- _class: lead -->
 
 > Software tweaking is the process of improving the performance of an application or the quality of its output. There can be two ways of accomplishing this: manually (that is, if one is familiar with programming; though it may be irrelevant if the source of the application is closed, and there are no built-in means to adjust its performance) or using another piece of software specialized for that purpose. Tweaking of this kind generally increases usability, in terms of personal configuration preferences, rather than objective performance of the system overall). 
 
@@ -26,6 +30,8 @@ from [Wikipedia: Tweaking / Software](https://en.wikipedia.org/wiki/Tweaking#Sof
 
 - run sketh with `CMD+SHIFT T`
 - see development of [Tweak Mode](http://galsasson.com/tweakmode/)
+
+![bg 50%](./resources/TweakingParametersInP5.png)
 
 ---
 

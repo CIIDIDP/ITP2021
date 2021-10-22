@@ -3,7 +3,7 @@
 @import 'gaia';
 @import url(https://fonts.googleapis.com/css?family=Roboto%20Mono);
 
-section, h1, h2, h3, h4, h5, h6, ul, ol, li, em, p, strong, a, strong, code, pre, svg {
+section, h1, h2, h3, h4, h5, h6, ul, ol, li, em, p, strong, a, strong, code, pre, svg, blockquote {
     font-family: ui-monospace, 'Roboto Mono', monospace;
     font-size: 18px;
     font-style: normal; font-variant: normal; font-weight: 400;
@@ -183,4 +183,26 @@ strong:after {
 
 em strong {
     font-style: italic;
+}
+
+blockquote {
+    padding-left: 22px;
+}
+
+blockquote:before {
+    font-family: ui-monospace, 'Roboto Mono', monospace;
+    color: #FFF;
+    content: '>';
+    position: absolute;
+    margin-left: 0px;
+    
+}
+
+blockquote:after {
+    content: ''
+}
+
+
+section.lead blockquote {
+  text-align: center;
 }
