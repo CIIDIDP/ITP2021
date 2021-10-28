@@ -54,6 +54,11 @@ class Thing {
     float radius = 50;
 
     void display(PGraphics pg) {
+        pg.stroke(255);
+        pg.line(position.x, position.y, width, height);
+        pg.line(position.x, position.y, 0, height);
+        pg.line(position.x, position.y, width, 0);
+        pg.line(position.x, position.y, 0, 0);
         pg.noStroke();
         pg.fill(255, 127, 0);
         pg.circle(position.x, position.y, radius * 2);

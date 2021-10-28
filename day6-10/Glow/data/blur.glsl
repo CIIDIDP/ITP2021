@@ -40,12 +40,9 @@ void main(void) {
               2.0 * col3 + 4.0 * col4 + 2.0 * col5 +
               1.0 * col6 + 2.0 * col7 + 1.0 * col8) / 16.0;  
   float mPow = adjust;
-   sum.r = pow(sum.r, mPow);
-   sum.g = pow(sum.g, mPow);       
-   sum.b = pow(sum.b, mPow);
-   sum.a = pow(sum.a, mPow);
-//  sum.r = pow(sum.r, mPow);
-//  sum.g = sum.r;
-//  sum.b = sum.r;
+  sum.r = pow(sum.r, mPow);
+  sum.g = pow(sum.g, mPow);       
+  sum.b = pow(sum.b, mPow);
+  sum.a = pow(sum.a, mPow);
   gl_FragColor = vec4(sum.rgb, 1.0) * vertColor;  
 }
