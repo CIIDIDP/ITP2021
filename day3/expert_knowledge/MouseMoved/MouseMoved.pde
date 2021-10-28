@@ -11,9 +11,13 @@ void draw() {
 
     beginShape();
     for (PVector mLine : mLines) {
-        vertex(mLine.x, mLine.y);
+        curveVertex(mLine.x, mLine.y);
     }
     endShape();
+
+    if (!mLines.isEmpty()) {
+        mLines.remove((int)random(mLines.size()));
+    }
 }
 
 void mouseMoved() {
